@@ -5,12 +5,9 @@ import view.Renderer
 
 
 object App {
-    fun start(
-        command: String,
-        width: String,
-        height: String
-    ): String {
-        return createCanvas(width, height)
+    fun start() {
+        val (command, width, height) = readLine()?.split(" ") ?: listOf()
+        print(createCanvas(width, height))
     }
 
     fun createCanvas(
@@ -19,5 +16,10 @@ object App {
     ): String {
         val canvas = Canvas(width.toInt(), height.toInt())
         return Renderer.render(canvas)
+    }
+
+    @JvmStatic
+    fun main(args: Array<String>) {
+        start()
     }
 }
