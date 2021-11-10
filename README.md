@@ -15,6 +15,8 @@ The program should work as follows:
 `./gradlew build` 
 
 ### Run
+Requires JDK11
+
 `java -jar app/build/libs/app.jar`
 
 ### Commands
