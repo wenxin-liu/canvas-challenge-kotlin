@@ -6,7 +6,7 @@ import kotlin.test.assertEquals
 class AppFunctionalTest {
     @Test
     fun `can create a canvas`() {
-        val actual = App.createCanvas("20", "4")
+        val actual = App.createCanvas(20, 4)
 
         val expected = """
             ----------------------

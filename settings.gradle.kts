@@ -1,3 +1,3 @@
 
-rootProject.name = "untitled"
-
+rootProject.name = "canvas-challenge-kotlin"
+include("app")
