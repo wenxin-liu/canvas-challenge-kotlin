@@ -16,8 +16,13 @@ object App {
                 (input.first() == "C" || input.first() == "c")
                 && input.size == 3
             ) {
-                for (i in 1..2) userInput.add(input[i].toInt())
-                break
+                try {
+                    userInput.clear()
+                    for (i in 1..2) userInput.add(input[i].toInt())
+                    break
+                } catch (e: Exception) {
+                    continue
+                }
             }
         }
 
